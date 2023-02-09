@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Keyboard",
+    "price": 29.99,
+    "count": 76
+  },
+  {
+    "id": 2,
+    "name": "Mouse",
+    "price": 19.99,
+    "count": 43
+  },
+  {
+    "id": 3,
+    "name": "Monitor",
+    "price": 79.99,
+    "count": 7
+  },
+  {
+    "id": 4,
+    "name": "PC",
+    "price": 749.99,
+    "count": 2
+  },
+  {
+    "id": 5,
+    "name": "Headphones",
+    "price": 19.99,
+    "count": 14
+  }
+]

@@ -2,8 +2,10 @@ package com.github.brianmmcclain.springbootapidemo;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
+import com.utils.Util;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -42,7 +44,19 @@ public class InventoryController {
         // to a JSON array, so we can return the list directly.
         return inventory;
     }
-    
+
+    /**
+     * Get all items from the inventory, returned as a JSON array
+     * @return All items from the inventory as a JSON array
+     */
+    @GetMapping("/itemsFile")
+    public ArrayList<Object> getInventoryFile() {
+        // Spring Boot will handle the serialization of the ArrayList
+        // to a JSON array, so we can return the list directly.
+        Util util = new Util();
+        return util.getItemsFromFile();
+    }
+
     /**
      * Get an item from the inventory by ID. Returned as JSON
      * @param id The id of the item to return
